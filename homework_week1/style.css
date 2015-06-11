@@ -1,0 +1,81 @@
+body {
+	background-color: #FFFFFF;
+	padding: 20px 10px 10px 50px;
+	margin: 40px 0px 0px 0px;
+	font-family: helvetica;
+}
+a {
+	color: hotpink;
+	text-decoration: none;
+}
+.name {
+	font-family: georgia;
+	font-size: 30px;
+	font-weight: lighter;
+	padding-right: 36px;
+	text-align: left;
+	padding-left: 100px;
+}
+table {
+	font-family: helvetica;
+	padding-bottom: 50px;
+}
+tr.top	{
+	font-size: 15px;
+	font-weight: bold;
+	text-align: left;
+}
+tr.bottom {
+	font-size: 16px;
+	font-weight: lighter;
+	text-align: left;
+}
+hr {
+	border-color: hotpink;
+	width: 48.5%;
+	margin-right: 0;
+	margin-bottom: 75px;
+}
+h2 {
+	padding-left: 100px;
+	font-style: italic;
+	font-family: times;
+	font-size: 20px;
+	font-weight: lighter;
+	margin-bottom: 5px;
+	margin-top: 35px;
+}
+p.title {
+	font-size: 18px;
+	font-style: uppercase;
+	font-family: helvetica;
+	padding-left: 152px;
+	margin-top: 5px;
+	margin-bottom: 0px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+ul {
+	margin-top: 5px;
+	margin-left: 130px;
+	margin-right: 210px;
+	list-style-type: circle;
+	padding-top: 0px;
+	text-align: justify;
+}
+li {
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+h3 {
+	font-size: 16px;
+	padding-left: 100px;
+	font-style: italic;
+	font-family: times;
+	font-weight: lighter;
+	margin-bottom: 5px;
+	margin-top: 35px;
+}
+

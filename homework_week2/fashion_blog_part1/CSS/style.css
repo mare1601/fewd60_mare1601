@@ -1,0 +1,112 @@
+body {
+  font-family: 'Lato', sans-serif;
+  width: 695px;
+  margin: 0 auto;
+}
+a {
+  text-decoration: none;
+  color: lightgray;
+}
+/* so obviously lightgray isn't the most appropriate way to handle this...but I'm leaving it for now */
+header {
+
+}
+h1 a {
+  font-size: 52px;
+  color: red;
+  text-decoration: none;
+  font-weight: lighter;
+}
+h2 {
+  font-size: 24px;
+  color: black;
+  position: relative;
+  font-weight: lighter;
+}
+h2 a {
+  font-size: 36px;
+  color: black;
+}
+h3 {
+  font-size: 36px;
+  color: lightgray;
+  font-weight: lighter;
+  padding: 0px;
+  margin-top: 75px;
+  margin-bottom: 25px;
+}
+
+h4 {
+  font-size: 20px;
+  text-align: right;
+  font-weight: bold;
+}
+/* Can't seem to get the H4 text to bold (see code above or below) I'm sure something is cascading that I can't find */
+h4 a {
+  color: red;
+
+}
+footer {
+  color: lightgray;
+  font-size: 18px;
+  text-align: left;
+  font-weight: lighter;
+}
+nav {
+  background-color: ;
+  color: lightgray;
+  font-size: 22px;
+}
+.nav {
+  display: inline-block;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin-left: 0px;
+  margin-right: 15px;
+  border-bottom: 2px solid rgba(0, 0, 0, .1);
+  padding-bottom: 5px;
+  font-weight: lighter;
+}
+footer a {
+    color: red;
+}
+.nav2 {
+  display: inline-block;
+  font-size: 18px;
+  padding-right: 5px;
+  border-left: 1px solid rgba(0, 0, 0, .3);
+  padding-left: 5px;
+}
+.nav3 {
+  display: inline-block;
+  font-size: 18px;
+  padding-right: 2px;
+}
+.firstcharacter { 
+  float: left;
+  color: lightgray;
+  font-weight: lighter;
+  font-size: 110px; 
+  line-height: 60px; 
+  padding-top: 14px; 
+  padding-right: 8px; 
+  padding-bottom: 30px;
+  margin-left: 0px;
+  padding-left: 0px;
+  text-align: left;
+}
+article {
+  position: relative;
+  line-height: 150%;
+  font-size: 18px;
+}
+p {
+  padding-top: 0px;
+  margin-top: 10px;
+}
+hr {
+  border: 0;
+  height: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
