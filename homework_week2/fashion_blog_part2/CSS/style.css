@@ -1,6 +1,6 @@
 body {
   font-family: 'Lato', sans-serif;
-  width: 695px;
+  width: 1180px;
   margin: 0 auto;
   background-color: lightgrey;
 }
@@ -10,23 +10,26 @@ body {
 }
 a {
   text-decoration: none;
-  color: lightgray;
+  color: white;
 }
 /* so obviously lightgray isn't the most appropriate way to handle this...but I'm leaving it for now */
-header {
-
+h1 {
+  display: inline;
+  padding-right: 20px;
 }
 h1 a {
   font-size: 52px;
   color: red;
   text-decoration: none;
-  font-weight: lighter;
+  font-weight: 300;
+  display: inline;
 }
 h2 {
   font-size: 24px;
-  color: black;
-  position: relative;
-  font-weight: lighter;
+  color: grey;
+  font-weight: 300;
+  display: inline;
+  margin-bottom: 15px;
 }
 h2 a {
   font-size: 36px;
@@ -35,45 +38,39 @@ h2 a {
 h3 {
   font-size: 36px;
   color: lightgray;
-  font-weight: lighter;
+  font-weight: 300;
   padding: 0px;
   margin-top: 75px;
   margin-bottom: 25px;
 }
-
 h4 {
-  font-size: 20px;
+  font-size: 18px;
   text-align: right;
-  font-weight: bold;
+  font-weight: 700;
 }
-/* Can't seem to get the H4 text to bold (see code above or below) I'm sure something is cascading that I can't find */
 h4 a {
   color: red;
-
-}
-footer {
-  color: lightgray;
-  font-size: 18px;
-  text-align: left;
-  font-weight: lighter;
+  font-weight: 700;
 }
 nav {
-  background-color: ;
-  color: lightgray;
+  background-color: black;
   font-size: 22px;
+  overflow: hidden;
+  margin-top: 10px;
+}
+#container {
+  text-align: justify;
 }
 .nav {
-  display: inline-block;
-  padding-left: 0px;
-  padding-right: 0px;
+  float: left;
+  position: relative;
   margin-left: 0px;
-  margin-right: 15px;
-  border-bottom: 2px solid rgba(0, 0, 0, .1);
-  padding-bottom: 5px;
-  font-weight: lighter;
-}
-footer a {
-    color: red;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  font-weight: 300;
+  width: 179px;
+  text-align: center;
+  border-right: 1px solid white;
 }
 .nav2 {
   display: inline-block;
@@ -90,7 +87,7 @@ footer a {
 .firstcharacter { 
   float: left;
   color: lightgray;
-  font-weight: lighter;
+  font-weight: 300;
   font-size: 110px; 
   line-height: 60px; 
   padding-top: 14px; 
@@ -104,14 +101,76 @@ article {
   position: relative;
   line-height: 150%;
   font-size: 18px;
+  float: left;
+  width: 705px;
+  border-bottom: 1px solid rgba(0, 0, 0, .1);
+  margin-bottom: 50px;
+  overflow: hidden;
+  font-weight: 300;
+}
+.mainpage {
+  float: left;
+  overflow: hidden;
+  width: 705px;
+  padding-right: 10px;
+}
+img {
+  margin-top: 15px;
+  overflow: hidden;
+  border-bottom: 1px solid rgba(0,0,0,.1);
+  padding-bottom: 20px;
+}
+
+/* Sidebar starts here */
+#sidebar {
+  width: 340px;
+  float: right;
+  overflow: hidden;
+  margin-top: 0px;
+  position: relative;
+  margin-top: 100px;
+  padding-left: 20px;
+} 
+h4.sidebar {
+  text-align: left;
+  color: grey;
+}
+.about {
+  color: grey;
+  font-size: 18px;
+  border-bottom: 1px solid rgba(0,0,0,.1);
+  padding-bottom: 10px;
+  font-weight: 300;
+}
+li {
+  color: grey;
+}
+a.popular{
+  color: red;
+  font-size: 18px;
+  line-height: 150%;
+  font-weight: 300;
 }
 p {
   padding-top: 0px;
   margin-top: 10px;
 }
-hr {
-  border: 0;
-  height: 0;
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+/* Sidebar ends here */
+
+.clearfix:after { 
+   content: "."; 
+   visibility: hidden; 
+   display: block; 
+   height: 0; 
+   clear: both;
+}
+footer {
+  color: lightgray;
+  font-size: 18px;
+  text-align: left;
+  font-weight: 300;
+}
+footer a {
+    color: red;
+    clear: both;
 }
