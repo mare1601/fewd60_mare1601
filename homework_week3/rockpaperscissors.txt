@@ -21,3 +21,8 @@ if playerA chooses scissors
     then playerA wins
   else playerB chooses rock
     then playerB wins
+
+if playerA wins twice
+  then game over
+if playerB wins twice
+  then game over
