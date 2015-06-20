@@ -1,0 +1,23 @@
+if playerA chooses rock
+  and playerB chooses scissors
+    then playerA wins
+  else playerB chooses paper
+    then playerB wins
+  else playerB chooses rock
+    then play again
+
+if playerA chooses paper
+  and playerB chooses scissors
+    then playerB wins
+  else playerB chooses paper
+    then play again
+  else playerB chooses rock
+    then playerA wins
+
+if playerA chooses scissors
+  and playerB chooses scissors
+    then play again
+  else playerB chooses paper
+    then playerA wins
+  else playerB chooses rock
+    then playerB wins
