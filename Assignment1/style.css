@@ -17,9 +17,11 @@ a {
 	padding-left: 100px;
 }
 table {
-	font-family: helvetica;
+	font-family: helvetica; /*you don't need to restate Helvetica here, 
+	it's redundent since you've added in your body*/
 	padding-bottom: 50px;
 }
+
 tr.top	{
 	font-size: 15px;
 	font-weight: bold;
@@ -30,12 +32,12 @@ tr.bottom {
 	font-weight: lighter;
 	text-align: left;
 }
-hr {
+hr { /*use border-bottom going forward*/
 	border-color: hotpink;
 	width: 48.5%;
 	margin-right: 0;
 	margin-bottom: 75px;
-}
+} 
 h2 {
 	padding-left: 100px;
 	font-style: italic;
@@ -68,7 +70,7 @@ li {
 	margin-bottom: 0px;
 	padding-top: 0px;
 	padding-bottom: 0px;
-}
+} /*reset will remove all of these browser settings for you. */
 h3 {
 	font-size: 16px;
 	padding-left: 100px;
