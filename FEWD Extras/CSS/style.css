@@ -1,0 +1,130 @@
+body {
+  width: 900px;
+  margin: 0 auto;
+  background-color: lightgrey;
+  font-family: sans-serif;
+  line-height: 1.5;
+}
+a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+#wrapper {
+  background-color: ;
+  padding: 50px;
+}
+
+/* Header starts here */
+header {
+  background-color: black;
+  padding-top: 20px;
+}
+header a {
+  color: white;
+}
+h1 {
+  color: yellow;
+  font-family: serif;
+  font-size: 40px;
+  padding-left: 15px;
+}
+nav {
+  text-align: right;
+  padding-right: 15px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+nav a {
+  padding-left: 15px;
+}
+nav :first-child,
+nav :nth-child(2) {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.coverimage {
+  background: transparent
+  url('../images/coworking.jpg')
+  no-repeat;
+  height: 445px;
+}
+.coverimage {
+ -webkit-background-size: cover;
+ -moz-background-size: cover;
+ -o-background-size: cover;
+ background-size: cover;
+}
+h2 {
+  background-color: gray;
+  font-size: 26px;
+  text-align: center;
+  font-style: italic;
+  font-family: serif;
+  padding: 20px;
+  border-top: 4px solid yellow;
+}
+.taste {
+  text-decoration: line-through;
+}
+.underline {
+  border-bottom: 2px solid yellow;
+}
+/* End of Header and Nav */
+
+h3 {
+  font-family: sans-serif;
+  font-size: 22px;
+  font-weight: bold;
+  padding: 10px 0px 10px 0px;
+}
+h4 {
+  font-size: 22px;
+  font-weight: bold;
+  font-family: serif;
+}
+aside {
+  position: relative;
+  background-color: rgba(255, 255, 255, .7);
+  height: 300px;
+  width: 250px;
+  top: 60px;
+  left: 500px;
+  padding: 15px;
+  box-shadow: 0px 0px 4px #888888;
+}
+button {
+  margin: 10px 0px 10px 0px;
+  padding: 10px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-size: 14px;
+  width: 100%;
+}
+
+/* Having trouble getting this button to have a yellow background */
+
+#coverimage button {
+  background-color: yellow;
+}
+article .moreinfo {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 33.33%;
+  padding: 25px;
+  background-color: white;
+  height: 250px;
+  overflow: hidden;
+  margin: 0px;
+  float: left;
+}
+.clear {
+  clear: both;
+}
+footer {
+  background-color: black;
+  padding: 15px;
+  color: white;
+  padding-left: 20px;
+}
