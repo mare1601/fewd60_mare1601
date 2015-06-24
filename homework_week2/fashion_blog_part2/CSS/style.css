@@ -71,20 +71,22 @@ nav {
   width: 179px;
   text-align: center;
   border-right: 1px solid white;
-}
+} /* replace .nav {} with nav a {} */
+
 .nav2 {
   display: inline-block;
   font-size: 18px;
   padding-right: 5px;
   border-left: 1px solid rgba(0, 0, 0, .3);
   padding-left: 5px;
-}
-.nav3 {
-  display: inline-block;
+} /* replace with footer nav a{}  */
+footer nav a:first-of-type {
+  display: block;
   font-size: 18px;
   padding-right: 2px;
-}
-.firstcharacter { 
+} /* replace with footer nav:first-child {} */
+
+ .firstcharacter { 
   float: left;
   color: lightgray;
   font-weight: 300;
@@ -170,7 +172,11 @@ footer {
   text-align: left;
   font-weight: 300;
 }
+
+footer nav {}
+/* add a new background color to over ride the header nav background color */
+
 footer a {
     color: red;
-    clear: both;
+   /* clear: both;*/
 }
