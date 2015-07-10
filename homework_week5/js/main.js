@@ -1,49 +1,30 @@
-//Define the functions to switch the background to specific cities
-function nycbg () {
-  $('body').addClass('nyc');
-  return false;
-}
-
-function sfbg() {
-  $('body').addClass('sf');
-  return false;
-}
-
-function labg() {
-  $('body').addClass('la');
-  return false;
-}
-
-function austinbg() {
-  $('body').addClass('austin');
-  return false;
-}
-
-function sydneybg() {
-  $('body').addClass('sydney');
-  return false;
-}
-
-
-// Define the arrays that will be acceptable for each city code
-var newyork = ['nyc', 'new york city', 'new york'];
-
-var sanfran = ['san francisco', 'sf', 'bay area'];
-
-var losangeles = ['los angeles', 'la', 'lax'];
-
-var austintx = ['austin', 'atx'];
-
-var sydneyaus = ['sydney', 'syd'];
-
-
-//Create the submit function that then references the city/bg functions already created
-//On-click referencing the button being clicked, and then the function to happen
-
 
 $('#submit-btn').click(function () {
-    if ($('#city-type').attr('newyork') === $('newyork')) {
-      $('nycbg');
+    var inputCity = $('#city-type').val();
+    var city = inputCity.trim();
+    if (city == 'New York City' || city == 'NYC' || city == 'New York') {
+      $('body').attr('class','nyc');
+      $('#city-type').val('');
+      return false;
+    }
+    else if (city == 'San Francisco' || city == 'SF' || city == 'Bay Area') {
+      $('body').attr('class','sf');
+      $('#city-type').val('');
+      return false;
+    }
+    else if (city == 'Los Angeles' || city == 'LA' || city == 'LAX') {
+      $('body').attr('class','la');
+      $('#city-type').val('');      
+      return false;
+    }
+    else if (city == 'Austin' || city == 'ATX') {
+      $('body').attr('class','austin');
+      $('#city-type').val('');     
+      return false;
+    }
+    else if (city == 'Sydney' || city == 'SYD') {
+      $('body').attr('class','sydney');
+      $('#city-type').val('');
       return false;
     }
 })
