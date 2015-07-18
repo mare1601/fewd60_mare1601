@@ -1,4 +1,11 @@
 
+//Link submit button to an on-click function
+//Define the variable of inputCity to call on the value of the "city-type" ID
+//Give the if/then statment that defines what the cities are able to be called 
+//Give the function that should happen if the city-type parameters match
+//Call on the css to change the class of the body to match the city entered
+//Added in the "trim" and "val('')" to work as the extra credit and get rid of extra spaces, as well as put the value back to normal
+
 $('#submit-btn').click(function () {
     var inputCity = $('#city-type').val();
     var city = inputCity.trim();
