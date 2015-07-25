@@ -492,7 +492,7 @@ footer p {
     font-size: 1.2em;
   }
   #sidebar img {
-    display: hidden;
+    display: none;
   }
   #benefits p, #benefits ul {
     width: auto;
