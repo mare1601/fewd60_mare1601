@@ -5,10 +5,19 @@ $(function() {
 
 
 $(window).scroll(function() {
-if ($(this).scrollTop() > 1){  
+if ($(this).scrollTop() > 5){  
     $('header').addClass('sticky');
   }
   else{
     $('header').removeClass('sticky');
+  }
+});
+
+$(window).scroll(function() {
+if ($(this).scrollTop() > 400){  
+    $('.plane').addClass('fly');
+  }
+  else{
+    $('.plane').removeClass('fly');
   }
 });
