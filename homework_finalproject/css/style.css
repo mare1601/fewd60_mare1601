@@ -10,33 +10,27 @@ body {
   font-family: 'Oxygen', sans-serif;
   width: 100%;
   margin: 0 auto;
-  background-color: #011F32;
+  background-color: #666666;
 }
 
 header {
   font-size: 50px;
   font-family: 'choplin', serif;
   font-weight: 400;
-  color: #ffe8ca;
+  color: white;
   padding-top: 200px;
   text-align: center;
   width: 100%;
-  height: 200px;
-  background-color: #011f32;
+  height: 150px;
+  background-color: #666666;
   transition: all 1.5s ease;
-  background-image: url('../images/deathtostock_medium1a.jpg') no-repeat center top;
 }
-
-.headwrap {
-    width: 100%;
-}
-
 
 header.sticky {
   float: right;
   font-size: 25px;
   font-weight: 400;
-  color: #ffe8ca;
+  color: white ;
   padding-top: 10px;
   height: 100px;
   width: 100%;
@@ -44,25 +38,32 @@ header.sticky {
   transition: all 1s ease;
 }
 
-
 #content {
   padding-top: 300px;
 }
 
+.character {
+  height: 500px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-image: url(http://40.media.tumblr.com/d7a014af6eaec53ccdc7a4171033f96d/tumblr_na06t4fnlI1tubinno1_1280.jpg);
+}
+
 .mantra {
   font-size: 30px;
-  color: #ffe8ca;
+  color: white;
   padding: 10%;
   padding-bottom: 20%;
   text-align: center;
 }
 
+
 .about {
   font-size: 25px;
   font-weight: 400;
-  color: #030537;
+  color: #666666;
   width: auto;
-  background-color: #acc5d5;
+  background-color: lightgrey;
   padding: 10%;
 }
 .tx {
@@ -106,9 +107,9 @@ header.sticky {
 .overview {
   font-size: 25px;
   font-weight: 400;
-  color: #acc5d5;
+  color: white;
   width: auto;
-  background-color: #dc7b00;
+  background-color: #666666;
   padding: 10%;
   padding-left: 20%;
   display: block;
@@ -123,6 +124,6 @@ header.sticky {
   width: 45%;
 }
 .skills {
-  padding-left: 50%;
-  color: #ffe8ca;
+  padding-left: 30%;
+  color: white;
 }
