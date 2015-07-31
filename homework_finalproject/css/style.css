@@ -31,15 +31,29 @@ header.sticky {
   float: right;
   font-size: 25px;
   font-weight: 400;
-  color: navy;
+  color: black;
   padding-top: 10px;
   height: 100px;
   width: 100%;
   position: fixed;
   transition: all 1s ease;
   border-bottom: 1px solid black;
+  z-index: 9999;
 }
-
+nav.sticky {
+  background-color: yellow;
+  float: right;
+  font-size: 25px;
+  font-weight: 400;
+  color: black;
+  padding-top: 10px;
+  height: 100px;
+  width: 100%;
+  position: fixed;
+  transition: all 1s ease;
+  border-bottom: 1px solid black;
+  z-index: 9999;
+}
 
 #content {
   padding-top: 300px;
@@ -56,7 +70,6 @@ header.sticky {
   font-size: 30px;
   color: white;
   padding: 10%;
-  padding-bottom: 20%;
   text-align: center;
 }
 
@@ -64,7 +77,7 @@ header.sticky {
 .about {
   font-size: 25px;
   font-weight: 400;
-  color: #666666;
+  color: black;
   width: auto;
   background-color: lightgrey;
   padding: 10%;
@@ -92,7 +105,7 @@ header.sticky {
   -ms-transform: rotate(107deg); /* IE 9 */
   -webkit-transform: rotate(107deg); /* Chrome, Safari, Opera */
   transform: rotate(107deg);
-  animation-duration: 10s;
+  animation-duration: 8s;
   animation-name: flyacross;
 }
 
@@ -115,25 +128,47 @@ header.sticky {
   background-color: #666666;
   padding: 10%;
   padding-left: 20%;
+  padding-bottom: 15%;
   display: block;
+}
+.overview img {
+  position: absolute;
+  padding-left: 15%;
+  opacity: .2;
+  padding-bottom: 20%;
 }
 .education {
   display: inline-block;
   width: 45%;
   float: left;
+  z-index: 9999;
 }
 .jobs {
   display: inline-block;
   width: 45%;
+  z-index: 9999;
 }
 .skills {
-  padding-left: 30%;
-  color: white;
+  background-color: lightgrey;
+  padding-left: 28%;
+  color: black;
+  padding-top: 50px;
+
 }
 
 .hats {
   display: inline-block;
-  padding-left: 50px;
+  padding-left: 20%;
+  border: 1px solid black;
+  background-color: #666666;
+  padding: 0px 5% 2% 5%;
+  box-shadow: 0px 0px 4px #888888;
+  line-height: 1.5;
+  color: white;
+}
+h2 {
+  font-size: 25px;
+  font-weight: normal;
 }
 .skills img {
   height:200px;
@@ -141,5 +176,7 @@ header.sticky {
   border-radius: 125px;
   border: 1px solid black;
   display: inline-block;
-  margin-right: 50px;
+  margin-right: 15%;
+  box-shadow: 2px 2px 2px #888888;
+
 }

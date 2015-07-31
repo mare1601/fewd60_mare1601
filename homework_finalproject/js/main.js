@@ -14,10 +14,10 @@ if ($(this).scrollTop() > 5){
 });
 
 $(window).scroll(function() {
-if ($(this).scrollTop() > 1000){  
+if ($(this).scrollTop() > 800){  
     $('.plane').addClass('fly');
   }
   else{
-    $('.plane').removeClass('fly'), $('.plane').addClass('hidden');
+    $('.plane').removeClass('fly');
   }
 });
