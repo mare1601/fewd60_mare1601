@@ -14,24 +14,21 @@ $('#task-form').submit(function(e){
     $('#tasks-to-do').removeClass('hidden');
   };
 
-  $('#tasks-to-do').append('<div class="task"><label for "checkbox">' + newTask + '</label>: ' +'<input type="checkbox" /> ' + '<br />' + '</name></div');
+  $('#tasks-to-do').append('<li><label for "addedchore">' + newTask + ': ' +'<input type="checkbox" class="addedchore"/></label>' + '<br/>' + '</li>');
 return false;
 
-
+$(".addedchore").change(function() {
+    $(this).closest('.addedchore label li').toggleClass("selected", this.checked);
+});
 
 });
 
-$(document).on('change', '.task', function() { 
-  if($(this).is(':checked')){ 
-    var parentElem = $(this).parent(); 
-    };  
-}); 
-/* 
-$('input:checkbox').on('click',function(){
-    if($(this).is(':checked')) {
- $('.task').attr('hidden');
-    };    
-});
+/*
+ $('input').change(function(){
+   if($('input').is(':checked')) {
+       $('#addedchore').addClass('selected')
+     };
+ });
 */
 
 //Leave the bracket and parens below alone forever

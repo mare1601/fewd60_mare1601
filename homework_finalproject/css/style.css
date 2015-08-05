@@ -12,7 +12,6 @@ body {
   margin: 0 auto;
   background-color: #666666;
 }
-
 header {
   font-size: 50px;
   font-family: 'choplin', serif;
@@ -21,40 +20,56 @@ header {
   padding-top: 200px;
   text-align: center;
   width: 100%;
-  height: 150px;
+  height: 350px;
   background-color: #666666;
   transition: all 1.5s ease;
 }
-
-header.sticky {
-  background-color: yellow;
-  float: right;
-  font-size: 25px;
-  font-weight: 400;
-  color: black;
-  padding-top: 10px;
-  height: 100px;
-  width: 100%;
-  position: fixed;
-  transition: all 1s ease;
-  border-bottom: 1px solid black;
-  z-index: 9999;
-}
-nav.sticky {
-  background-color: yellow;
-  float: right;
-  font-size: 25px;
-  font-weight: 400;
-  color: black;
-  padding-top: 10px;
-  height: 100px;
-  width: 100%;
-  position: fixed;
-  transition: all 1s ease;
-  border-bottom: 1px solid black;
-  z-index: 9999;
+footer {
+  padding-top: 50px;
+  padding-bottom: 75px;
+  text-align: center;
 }
 
+/* Navigation styling and div help */
+.anchor {
+  visibility: hidden;
+  height: 70px;
+}
+.nav {
+  background-color: white;
+  color: black;
+  font-size: 15px;
+  display: inline-block;
+  position: relative;
+  margin-top: 0;
+  padding-top: 20px;
+  height: 50px;
+  width: 100%;
+  z-index: 9999;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  text-align: center;
+}
+.nav-wrapper {
+  height: 50px;
+}
+.nav-wrapper .nav.fixed {
+    position: fixed;
+    z-index: 10000;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.nav a {
+  text-decoration: none;
+  color: black;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: rgba(0,0,0,.0);
+  display: inline-block;
+}
+
+/* The real content styling stuff */
 #content {
   padding-top: 300px;
 }
@@ -64,6 +79,7 @@ nav.sticky {
   background-repeat: no-repeat;
   background-size: 100%;
   background-image: url(http://40.media.tumblr.com/d7a014af6eaec53ccdc7a4171033f96d/tumblr_na06t4fnlI1tubinno1_1280.jpg);
+/* open source images ftw */
 }
 
 .mantra {
@@ -71,9 +87,8 @@ nav.sticky {
   color: white;
   padding: 10%;
   text-align: center;
+  padding-bottom: 5%;
 }
-
-
 .about {
   font-size: 25px;
   font-weight: 400;
@@ -89,12 +104,13 @@ nav.sticky {
 .nc {
   text-align: center;
   padding-bottom: 50px;
+  padding-right: 8%;
 }
 .ny {
   text-align: right;
 }
-/* Animation time - watch the airplane soar... */
 
+/* Animation time - watch the airplane soar... */
 .plane img {
   display: none;
 }
@@ -105,7 +121,7 @@ nav.sticky {
   -ms-transform: rotate(107deg); /* IE 9 */
   -webkit-transform: rotate(107deg); /* Chrome, Safari, Opera */
   transform: rotate(107deg);
-  animation-duration: 8s;
+  -webkit-animation: play 8s forwards;
   animation-name: flyacross;
 }
 
@@ -117,9 +133,11 @@ nav.sticky {
 
   to {
     margin-left: 130%;
-    margin-top: 40%;
+    margin-top: 30%;
   }
 }
+
+/* Real career info */
 .overview {
   font-size: 25px;
   font-weight: 400;
@@ -143,28 +161,27 @@ nav.sticky {
   float: left;
   z-index: 9999;
 }
-.jobs {
+.career {
   display: inline-block;
   width: 45%;
   z-index: 9999;
 }
 .skills {
   background-color: lightgrey;
-  padding-left: 28%;
+  text-align: center;
   color: black;
   padding-top: 50px;
-
+  padding-bottom: 75px;
 }
 
 .hats {
   display: inline-block;
-  padding-left: 20%;
-  border: 1px solid black;
   background-color: #666666;
-  padding: 0px 5% 2% 5%;
+  padding: 10px 70px 30px 70px;
   box-shadow: 0px 0px 4px #888888;
-  line-height: 1.5;
+  line-height: 2;
   color: white;
+  text-align: left;
 }
 h2 {
   font-size: 25px;
@@ -174,9 +191,133 @@ h2 {
   height:200px;
   width: 200px;
   border-radius: 125px;
-  border: 1px solid black;
-  display: inline-block;
+  display: inline;
   margin-right: 15%;
   box-shadow: 2px 2px 2px #888888;
+  margin-bottom: 60px;
+}
+
+.calltoaction {
+  font-size: 20px;
+  padding-bottom: 50px;
+  margin-bottom: 50px;
+}
+footer img {
+  padding-top: 50px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+form {
+  padding: 5%;
+  float: center;
+}
+#name {
+  width: 60%;
+}
+#textarea {
+  width: 60%;
+}
+#select-choice {
+  width: 60%;
+}
+form div {
+  padding-bottom: 10px;
+}
+label {
+  display: block;
+}
+
+@media (max-width: 650px) {
+  .skills {
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
+  .skills img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto 
+  }
+  .hats {
+    box-shadow: none;
+    background-color: lightgrey;
+    text-align: left;
+    border: 0;
+    padding-left: auto;
+    padding-right: auto;
+    color: black;
+    display:-moz-inline-stack;
+    display:inline-block;
+    zoom:1;
+    *display:inline;
+  } 
+   #name {
+    width: 80%;
+  }
+  #textarea {
+    width: 80%;
+  }
+  #select-choice {
+    width: 80%;
+  }
+}
+.fly img {
+  display: block;
+  position: absolute;
+  -ms-transform: rotate(107deg); /* IE 9 */
+  -webkit-transform: rotate(107deg); /* Chrome, Safari, Opera */
+  transform: rotate(107deg);
+  -webkit-animation: play 5s forwards;
+  animation-name: flyacross;
+}
+
+@keyframes flyacross {
+  from {
+    margin-left: -30%;
+    margin-top: -20%;
+  }
+
+  to {
+    margin-left: 130%;
+    margin-top: 30%;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 1100px) {
+  .overview {
+    display: block;
+    font-size: 1.2em;
+    width: auto;
+  }
+ .overview img {
+    position: absolute;
+    padding-left: 22%;
+    opacity: .2;
+    padding-bottom: 20%;
+    z-index: 1;
+  }
+ 
+  .education {
+    display: block;
+    z-index: 2;
+    padding-bottom: 15px;
+  }
+  .career {
+    display: block;
+    z-index: 2;
+  }
+}
+@media (min-width: 950px) {
+  #name {
+    width: 40%;
+  }
+  #textarea {
+    width: 40%;
+  }
+  #select-choice {
+    width: 40%;
+  }
 
 }
+
+
