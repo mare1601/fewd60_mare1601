@@ -224,6 +224,8 @@ label {
   display: block;
 }
 
+/* Media Queries...aaaaaand go! */
+/* Probably could be combined with something! */
 @media (max-width: 650px) {
   .skills {
     width: 100%;
@@ -280,6 +282,8 @@ label {
   }
 }
 
+
+/* Middle stuff! Like ipads! */
 @media (min-width: 500px) and (max-width: 1100px) {
   .overview {
     font-size: 1.2em;
@@ -308,6 +312,8 @@ label {
     display: none;
   }
 }
+
+/* Biggest stuff! Large Screens! */
 @media (min-width: 950px) {
   #name {
     width: 40%;
@@ -323,6 +329,7 @@ label {
   }
 }
 
+/* Small screens! Like iphones! */
 @media (max-width: 500px) {
   header {
     height: 250px;
@@ -381,13 +388,16 @@ label {
     color: black;
     font-size: 15px;
     display: block;
-    position: relative;
-    margin-top: 40px;
     width: 100%;
     z-index: 9999;
     border-top: 1px solid black;
     border-bottom: 1px solid black;
     text-align: left;
+    position: fixed;
+    top: 40px;
+  }
+  .nav-show a {
+    display: block;
   }
   #nav-toggle { 
     position: fixed; 
