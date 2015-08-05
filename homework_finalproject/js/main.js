@@ -39,3 +39,23 @@ $(function() {
     }
   });
 });
+
+$("#nav-toggle").click(function () {
+  if($('#main-nav').is('.nav')){
+    $('#main-nav').removeClass('nav');
+    $('#main-nav').addClass('nav-show');
+  }
+  else {
+    $('#main-nav').removeClass('nav-show');
+    $('#main-nav').addClass('nav');
+  }
+});
+/*
+$("#nav-toggle").click(function () {
+  if($('#main-nav').is('.nav-show')){
+    $('#main-nav').removeClass('nav-show');
+    $('#main-nav').addClass('nav');
+    }
+
+});
+*/
