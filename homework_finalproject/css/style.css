@@ -116,6 +116,7 @@ footer {
 }
 
 .fly img {
+  overflow: hidden;
   display: block;
   position: absolute;
   -ms-transform: rotate(107deg); /* IE 9 */
@@ -310,9 +311,12 @@ label {
   }
   #nav-toggle {
     display: none;
+<<<<<<< HEAD
   }
   #hamburger {
     display: none;
+=======
+>>>>>>> origin/master
   }
 }
 
@@ -330,9 +334,107 @@ label {
   #nav-toggle {
     display: none;
   }
+<<<<<<< HEAD
   #hamburger {
     display: none;
   }
+=======
+}
+
+/* Small screens! Like iphones! */
+@media (max-width: 500px) {
+  header {
+    height: 250px;
+  }
+  .anchor {
+    height: 10px;
+  }
+  .fly {
+    display: none;
+  }
+  .character {
+    height: 285px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-image: url(http://40.media.tumblr.com/d7a014af6eaec53ccdc7a4171033f96d/tumblr_na06t4fnlI1tubinno1_1280.jpg);
+  /* open source images ftw */
+  }
+  .about {
+    font-size: 1em;
+  }
+  .mantra {
+    font-size: 1.2em;
+    margin: 10%;
+    padding: 10%;  
+  }
+  .overview {
+    font-size: 1em;
+    display: block;
+    width: auto;
+    height: 250px;
+    padding: auto;
+    margin: auto;
+    text-align: center;
+  }
+  .education {
+    display: block;
+    margin: auto;
+    padding: auto;
+    width: 100%;
+    padding-bottom: 15px;
+  }
+  ul {
+    list-style-type: none;
+  }
+  .career {
+    display: block;
+    width: 100%;
+    padding: auto;
+    margin: auto;
+  }
+  .nav {
+    display: none;
+  }
+  .nav-show {
+    background-color: white;
+    color: black;
+    font-size: 15px;
+    display: block;
+    width: 100%;
+    z-index: 9999;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    text-align: left;
+    position: fixed;
+    top: 40px;
+  }
+  .nav-show a {
+    display: block;
+  }
+  #nav-toggle { 
+    position: fixed; 
+    left: 90%; 
+    top: 1%; 
+    cursor: pointer; 
+    padding: 10px 35px 16px 0px; 
+  }
+  #nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
+    cursor: pointer;
+    border-radius: 1px;
+    height: 5px;
+    width: 35px;
+    background: white;
+    position: absolute;
+    display: block;
+    content: '';
+  }
+  #nav-toggle span:before {
+    top: -10px; 
+  }
+  #nav-toggle span:after {
+    bottom: -10px;
+  }
+>>>>>>> origin/master
 }
 
 /* Small screens! Like iphones! */

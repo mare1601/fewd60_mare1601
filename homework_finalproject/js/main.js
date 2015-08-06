@@ -40,6 +40,7 @@ $(function() {
   });
 });
 
+<<<<<<< HEAD
 
 /* Toggle class so the hamburger button works - Brilliant!! */
 $("#nav-toggle").click(function () {
@@ -67,3 +68,16 @@ $("#nav-toggle").click(function () {
       });  
   }
 });
+=======
+/* Toggle class so the hamburger button works */
+$("#nav-toggle").click(function () {
+  if($('#main-nav').is('.nav')){
+    $('#main-nav').removeClass('nav');
+    $('#main-nav').addClass('nav-show');
+  }
+  else {
+    $('#main-nav').removeClass('nav-show');
+    $('#main-nav').addClass('nav');
+  }
+});
+>>>>>>> origin/master
