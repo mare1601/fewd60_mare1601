@@ -116,7 +116,6 @@ footer {
 }
 
 .fly img {
-  overflow: hidden;
   display: block;
   position: absolute;
   -ms-transform: rotate(107deg); /* IE 9 */
