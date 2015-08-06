@@ -311,12 +311,9 @@ label {
   }
   #nav-toggle {
     display: none;
-<<<<<<< HEAD
   }
   #hamburger {
     display: none;
-=======
->>>>>>> origin/master
   }
 }
 
@@ -334,11 +331,9 @@ label {
   #nav-toggle {
     display: none;
   }
-<<<<<<< HEAD
   #hamburger {
     display: none;
   }
-=======
 }
 
 /* Small screens! Like iphones! */
@@ -434,7 +429,6 @@ label {
   #nav-toggle span:after {
     bottom: -10px;
   }
->>>>>>> origin/master
 }
 
 /* Small screens! Like iphones! */
