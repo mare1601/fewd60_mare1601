@@ -39,3 +39,31 @@ $(function() {
     }
   });
 });
+
+
+/* Toggle class so the hamburger button works - Brilliant!! */
+$("#nav-toggle").click(function () {
+  if($('#main-nav').is('.nav')){
+    $('#main-nav').slideUp(function(){
+          $('#main-nav').addClass('nav-show');
+          $('#main-nav').removeClass('nav');
+          $('#main-nav').slideDown(1000);
+          $('#hamburger').animate({
+            height: '150px'
+            }, 1000, function(){
+          });
+      }); 
+  }
+  else {
+    $('#main-nav').slideUp(function(){
+        $('#main-nav').addClass('nav');
+        $('#main-nav').removeClass('nav-show');
+        $('#main-nav').slideUp(2000);
+          $('#hamburger').animate({
+            height: '0px'
+            }, 1000, function(){
+          });
+
+      });  
+  }
+});
