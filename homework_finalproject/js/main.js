@@ -47,10 +47,10 @@ $("#nav-toggle").click(function () {
     $('#main-nav').slideUp(function(){
           $('#main-nav').addClass('nav-show');
           $('#main-nav').removeClass('nav');
-          $('#main-nav').slideDown(1000);
+          $('#main-nav').slideDown(500);
           $('#hamburger').animate({
             height: '150px'
-            }, 1000, function(){
+            }, 500, function(){
           });
       }); 
   }
@@ -58,10 +58,10 @@ $("#nav-toggle").click(function () {
     $('#main-nav').slideUp(function(){
         $('#main-nav').addClass('nav');
         $('#main-nav').removeClass('nav-show');
-        $('#main-nav').slideUp(2000);
+        $('#main-nav').slideUp(1000);
           $('#hamburger').animate({
             height: '0px'
-            }, 1000, function(){
+            }, 500, function(){
           });
 
       });  
