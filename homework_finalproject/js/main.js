@@ -18,7 +18,7 @@ $(window).scroll(function() {
 
 // Send the plane across the page!
 $(window).scroll(function() {
-if ($(this).scrollTop() > 1200){  
+if ($(this).scrollTop() > 1000){  
     $('.plane').addClass('fly');
   }
   else{
