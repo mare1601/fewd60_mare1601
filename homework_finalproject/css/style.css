@@ -126,7 +126,7 @@ header {
   }
   to {
     margin-left: 100%;
-    margin-top: 30%;
+    margin-top: 18%;
     overflow: hidden;
     display: none;
   }
@@ -327,8 +327,8 @@ label {
       margin-top: -20%;
     }
     to {
-      margin-left: 130%;
-      margin-top: 30%;
+      margin-left: 100%;
+      margin-top: 18%;
     }
   }
   .highlights {
