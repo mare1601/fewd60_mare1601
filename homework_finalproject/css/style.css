@@ -24,11 +24,6 @@ header {
   background-color: #666666;
   transition: all 1.5s ease;
 }
-footer {
-  padding-top: 50px;
-  padding-bottom: 75px;
-  text-align: center;
-}
 
 /* Navigation styling and div help */
 .anchor {
@@ -69,11 +64,11 @@ footer {
   background-color: rgba(0,0,0,.0);
   display: inline-block;
 }
+
 /* The real content styling stuff */
 #content {
   padding-top: 300px;
 }
-
 .character {
   height: 500px;
   background-repeat: no-repeat;
@@ -81,7 +76,6 @@ footer {
   background-image: url(http://40.media.tumblr.com/d7a014af6eaec53ccdc7a4171033f96d/tumblr_na06t4fnlI1tubinno1_1280.jpg);
 /* open source images ftw */
 }
-
 .mantra {
   font-size: 30px;
   color: white;
@@ -125,17 +119,16 @@ footer {
   -webkit-animation: play 8s forwards;
   animation-name: flyacross;
 }
-
 @keyframes flyacross {
   from {
     margin-left: -30%;
     margin-top: -20%;
   }
-
   to {
-    margin-left: 130%;
+    margin-left: 100%;
     margin-top: 30%;
     overflow: hidden;
+    display: none;
   }
 }
 
@@ -151,6 +144,10 @@ footer {
   padding: auto;
   display: block;
   text-align: left;
+  background-image: url('../images/ampersand.png');
+  background-repeat: no-repeat;
+  background-position: 37%;
+  background-size: 20%;
 }
 .education {
   display: inline-block;
@@ -171,7 +168,6 @@ footer {
   padding-top: 50px;
   padding-bottom: 75px;
 }
-
 .hats {
   display: inline-block;
   background-color: #666666;
@@ -194,11 +190,41 @@ h2 {
   box-shadow: 2px 2px 2px #888888;
   margin-bottom: 60px;
 }
-
+.banner {
+  height: 400px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-color: #666666;
+  width: 100%;
+  background-image: url(https://s3.amazonaws.com/StartupStockPhotos/uploads/41.jpg);
+/* open source images ftw */
+}
+.numbers {
+  background-color: #666666;
+  margin: auto;
+}
+.highlights {
+  display: inline-block;
+  width:50%;
+  margin: 0% 20% 10% 20%;
+}
+.highlights h2 {
+  text-align: center;
+}
+.highlights li {
+  padding: 5px;  
+}
 .calltoaction {
   font-size: 20px;
   padding-bottom: 50px;
   margin-bottom: 50px;
+}
+
+/* Footer stuff starts here */
+footer {
+  padding-top: 50px;
+  padding-bottom: 75px;
+  text-align: center;
 }
 footer img {
   padding-top: 50px;
@@ -226,96 +252,6 @@ label {
 }
 
 /* Media Queries...aaaaaand go! */
-/* Probably could be combined with something! */
-@media (max-width: 650px) {
-  .skills {
-    width: 100%;
-    display: block;
-    text-align: center;
-  }
-  .skills img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto 
-  }
-  .hats {
-    box-shadow: none;
-    background-color: lightgrey;
-    text-align: left;
-    border: 0;
-    padding-left: auto;
-    padding-right: auto;
-    color: black;
-    display:-moz-inline-stack;
-    display:inline-block;
-    zoom:1;
-    *display:inline;
-  } 
-   #name {
-    width: 80%;
-  }
-  #textarea {
-    width: 80%;
-  }
-  #select-choice {
-    width: 80%;
-  }
-}
-.fly img {
-  display: block;
-  position: absolute;
-  -ms-transform: rotate(107deg); /* IE 9 */
-  -webkit-transform: rotate(107deg); /* Chrome, Safari, Opera */
-  transform: rotate(107deg);
-  -webkit-animation: play 5s forwards;
-  animation-name: flyacross;
-}
-
-@keyframes flyacross {
-  from {
-    margin-left: -30%;
-    margin-top: -20%;
-  }
-
-  to {
-    margin-left: 130%;
-    margin-top: 30%;
-  }
-}
-
-
-/* Middle stuff! Like ipads! */
-@media (min-width: 500px) and (max-width: 1100px) {
-  .overview {
-    font-size: 1.2em;
-    display: block;
-    width: auto;
-    height: 250px;
-    padding: auto;
-    margin: auto;
-    text-align: left;
-    padding-left: 25%;
-  }
-  .education {
-    display: block;
-    margin: auto;
-    padding: auto;
-    width: 100%;
-    padding-bottom: 15px;
-  }
-  .career {
-    display: block;
-    width: 100%;
-    padding: auto;
-    margin: auto;
-  }
-  #nav-toggle {
-    display: none;
-  }
-  #hamburger {
-    display: none;
-  }
-}
 
 /* Biggest stuff! Large Screens! */
 @media (min-width: 950px) {
@@ -336,13 +272,139 @@ label {
   }
 }
 
+/* Probably could be combined with something! */
+@media (max-width: 650px) {
+  .skills {
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
+  .skills img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto 
+  }
+  .overview {
+    background-image: url('../images/ampersand.png');
+    background-repeat: no-repeat;
+    background-position: 2%;
+    background-size: 40%;
+  }
+  .hats {
+    box-shadow: none;
+    background-color: lightgrey;
+    text-align: left;
+    border: 0;
+    padding-left: auto;
+    padding-right: auto;
+    color: black;
+    display:-moz-inline-stack;
+    display:inline-block;
+    zoom:1;
+    *display:inline;
+  } 
+  #name {
+    width: 80%;
+  }
+  #textarea {
+    width: 80%;
+  }
+  #select-choice {
+    width: 80%;
+  }
+  .fly img {
+    display: block;
+    position: absolute;
+    -ms-transform: rotate(107deg); /* IE 9 */
+    -webkit-transform: rotate(107deg); /* Chrome, Safari, Opera */
+    transform: rotate(107deg);
+    -webkit-animation: play 5s forwards;
+    animation-name: flyacross;
+  }
+  @keyframes flyacross {
+    from {
+      margin-left: -30%;
+      margin-top: -20%;
+    }
+    to {
+      margin-left: 130%;
+      margin-top: 30%;
+    }
+  }
+  .highlights {
+    display: inline-block;
+    width:70%;
+    margin: 0% 10% 10% 10%;
+    font-size: 1em;
+  }
+  .highlights h2 {
+    text-align: center;
+  }
+  .highlights li {
+  padding: 5px;  
+  }
+}
+
+/* Middle stuff! Like ipads! */
+@media (min-width: 500px) and (max-width: 1100px) {
+  .overview {
+    font-size: 1.2em;
+    display: block;
+    width: auto;
+    height: 250px;
+    padding: auto;
+    margin: auto;
+    text-align: left;
+    padding-left: 25%;
+    background-image: url('../images/ampersand.png');
+    background-repeat: no-repeat;
+    background-position: 2%;
+    background-size: 30%;
+  }
+  .nav {
+    display: inline-block;
+  }
+  .education {
+    display: block;
+    margin: auto;
+    padding: auto;
+    width: 100%;
+    padding-bottom: 15px;
+    margin-left: 100px;
+  }
+  .career {
+    display: block;
+    width: 100%;
+    padding: auto;
+    margin: auto;
+    margin-left: 100px;
+  }
+  #nav-toggle {
+    display: none;
+  }
+  #hamburger {
+    display: none;
+  }
+  .character {
+    height: 285px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-image: url(http://40.media.tumblr.com/d7a014af6eaec53ccdc7a4171033f96d/tumblr_na06t4fnlI1tubinno1_1280.jpg);
+  /* open source images ftw */
+  }
+  .banner {
+    height: 285px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-image: url(https://s3.amazonaws.com/StartupStockPhotos/uploads/41.jpg);
+  /* open source images ftw */
+  }
+}
+
 /* Small screens! Like iphones! */
 @media (max-width: 500px) {
   header {
     height: 250px;
-  }
-  .anchor {
-    height: 10px;
   }
   .fly {
     display: none;
@@ -354,99 +416,11 @@ label {
     background-image: url(http://40.media.tumblr.com/d7a014af6eaec53ccdc7a4171033f96d/tumblr_na06t4fnlI1tubinno1_1280.jpg);
   /* open source images ftw */
   }
-  .about {
-    font-size: 1em;
-  }
-  .mantra {
-    font-size: 1.2em;
-    margin: 10%;
-    padding: 10%;  
-  }
-  .overview {
-    font-size: 1em;
-    display: block;
-    width: auto;
-    height: 250px;
-    padding: auto;
-    margin: auto;
-    text-align: center;
-  }
-  .education {
-    display: block;
-    margin: auto;
-    padding: auto;
-    width: 100%;
-    padding-bottom: 15px;
-  }
-  ul {
-    list-style-type: none;
-  }
-  .career {
-    display: block;
-    width: 100%;
-    padding: auto;
-    margin: auto;
-  }
-  .nav {
-    display: none;
-  }
-  .nav-show {
-    background-color: white;
-    color: black;
-    font-size: 15px;
-    display: block;
-    width: 100%;
-    z-index: 9999;
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
-    text-align: left;
-    position: fixed;
-    top: 40px;
-  }
-  .nav-show a {
-    display: block;
-  }
-  #nav-toggle { 
-    position: fixed; 
-    left: 90%; 
-    top: 1%; 
-    cursor: pointer; 
-    padding: 10px 35px 16px 0px; 
-  }
-  #nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
-    cursor: pointer;
-    border-radius: 1px;
-    height: 5px;
-    width: 35px;
-    background: white;
-    position: absolute;
-    display: block;
-    content: '';
-  }
-  #nav-toggle span:before {
-    top: -10px; 
-  }
-  #nav-toggle span:after {
-    bottom: -10px;
-  }
-}
-
-/* Small screens! Like iphones! */
-@media (max-width: 500px) {
-  header {
-    height: 250px;
-  }
-  .anchor {
-    height: 10px;
-  }
-  .fly {
-    display: none;
-  }
-  .character {
+  .banner {
     height: 285px;
     background-repeat: no-repeat;
     background-size: 100%;
-    background-image: url(http://40.media.tumblr.com/d7a014af6eaec53ccdc7a4171033f96d/tumblr_na06t4fnlI1tubinno1_1280.jpg);
+    background-image: url(https://s3.amazonaws.com/StartupStockPhotos/uploads/41.jpg);
   /* open source images ftw */
   }
   .about {
@@ -499,12 +473,14 @@ label {
     position: fixed;
     top: 40px;
     overflow: hidden;
+    scrolltop: false;
   }
   .nav-show a {
     display: block;
     text-decoration: none;
     color: black;
     padding: 10px;
+    padding-left: 30px;
     margin: auto;
     border-bottom: 1px solid lightgrey;
   }
@@ -515,7 +491,6 @@ label {
     cursor: pointer; 
     padding: 10px 35px 16px 0px;
     width: 100%;
-    background-color: #666666; 
     z-index: 9999;
   }
   #nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {

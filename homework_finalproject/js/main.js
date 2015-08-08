@@ -1,3 +1,5 @@
+$(document).ready(function() {
+
 // Fade in of my name
 $(function() {
   $('.titletext').hide().delay(900).fadeIn(1000);
@@ -32,7 +34,7 @@ $(function() {
       target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
       if (target.length) {
         $('html,body').animate({
-          scrollTop: target.offset().top
+          scrollTop: target.offset().top-70
         }, 1000);
         return false;
       }
@@ -41,7 +43,7 @@ $(function() {
 });
 
 
-/* Toggle class so the hamburger button works - Brilliant!! */
+// Toggle class so the hamburger button works - Brilliant!!
 $("#nav-toggle").click(function () {
   if($('#main-nav').is('.nav')){
     $('#main-nav').slideUp(function(){
@@ -52,6 +54,7 @@ $("#nav-toggle").click(function () {
             height: '150px'
             }, 500, function(){
           });
+          return false;
       }); 
   }
   else {
@@ -63,8 +66,26 @@ $("#nav-toggle").click(function () {
             height: '0px'
             }, 500, function(){
           });
-
       });  
+//not sure where the return false should go but I need it to stop being wonky!
+    return false;
   }
+  return false;
 });
 
+//I only want the link clicking to hide the nav bar when it's tiny :) 
+  if($(window).width() <= 500) {
+      $('.topnav').click(function(){
+      $('#main-nav').slideUp(function(){
+        $('#main-nav').addClass('nav');
+        $('#main-nav').removeClass('nav-show');
+        $('#main-nav').slideUp(1000);
+          $('#hamburger').animate({
+            height: '0px'
+            }, 500, function(){
+            });
+        });      
+      });
+     }; 
+
+});
