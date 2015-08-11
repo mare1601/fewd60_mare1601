@@ -284,6 +284,10 @@ label {
     margin-left: auto;
     margin-right: auto 
   }
+  .nav {
+    display: inline-block;
+  }
+
   .overview {
     background-image: url('../images/ampersand.png');
     background-repeat: no-repeat;
@@ -360,6 +364,9 @@ label {
     background-repeat: no-repeat;
     background-position: 2%;
     background-size: 30%;
+  }
+  .nav-show {
+    display: none;
   }
   .nav {
     display: inline-block;

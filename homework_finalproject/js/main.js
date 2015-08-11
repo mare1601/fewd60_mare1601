@@ -42,7 +42,7 @@ $(function() {
   });
 });
 
-
+if($(window).width() <= 500){
 // Toggle class so the hamburger button works - Brilliant!!
 $("#nav-toggle").click(function () {
   if($('#main-nav').is('.nav')){
@@ -87,5 +87,5 @@ $("#nav-toggle").click(function () {
         });      
       });
      }; 
-
+  };
 });
