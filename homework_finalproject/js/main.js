@@ -42,30 +42,30 @@ $(function() {
   });
 });
 
-if($(window).width() <= 500){
 // Toggle class so the hamburger button works - Brilliant!!
-$("#nav-toggle").click(function () {
+$("#nav-toggle").click(function (e) {
+      e.preventDefault();
   if($('#main-nav').is('.nav')){
-    $('#main-nav').slideUp(function(){
+   $('#main-nav').slideUp(function(){ 
           $('#main-nav').addClass('nav-show');
           $('#main-nav').removeClass('nav');
           $('#main-nav').slideDown(500);
           $('#hamburger').animate({
             height: '150px'
             }, 500, function(){
-          });
+          }); 
           return false;
       }); 
   }
   else {
-    $('#main-nav').slideUp(function(){
+    $('#main-nav').slideUp(function(){  
         $('#main-nav').addClass('nav');
         $('#main-nav').removeClass('nav-show');
         $('#main-nav').slideUp(1000);
           $('#hamburger').animate({
             height: '0px'
             }, 500, function(){
-          });
+          });  
       });  
 //not sure where the return false should go but I need it to stop being wonky!
     return false;
@@ -87,5 +87,4 @@ $("#nav-toggle").click(function () {
         });      
       });
      }; 
-  };
 });
