@@ -1,0 +1,107 @@
+/* css file for coffee shop project */
+
+body {
+	background-color: white;
+	font-family: 'arial';
+}
+.container {
+	background-color: white;
+	width: 70%;
+	margin: 0 auto;
+}
+.header {
+	height: 200px;
+}
+nav {
+	color: white;
+	width: 100%;
+}
+
+li {
+	display: inline-block;
+	background-color: black;
+	padding: 15px;
+	width: 8%;
+
+}
+h1 {
+	font-family: 'Passion One', cursive;
+	font-size: 6em;
+	margin: 0 auto;
+	padding-top: 50px;
+	width: 100%;
+	font-weight: bolder;
+}
+h2 {
+	font-size: 1.5em;
+}
+.photos img {
+	display: inline-block;
+	overflow: hidden;
+	margin: 10px;
+}
+.photos {
+	overflow: hidden;
+	height: 154px;
+	margin: 10px;
+}
+.main {
+	box-sizing: border-box;
+	margin-top: 25px;
+	width: 100%;
+}
+.blog {
+	position: relative;
+	float: left;
+	width: 65%;
+	line-height: 1.5em;
+}
+article {
+	padding-top: 25px;
+}
+.blog img {
+	float: left;
+	padding-right: 15px;
+}
+.side {
+	position: relative;
+	float: right;
+	width: 35%;
+}
+.social {
+	height: 200px;
+	background-color: lightgrey;
+	margin: 10px;
+}
+.social img {
+	display: inline-block;
+}
+.cart {
+	height: 300px;
+	background-color: lightgrey;
+	margin: 10px;
+}
+.coffeemonth {
+	height: 400px;
+	background-color: lightgrey;
+	margin: 10px;
+}
+.facts {
+	height: 200px;
+	background-color: lightgrey;
+	margin: 10px;
+}
+.newsletter {
+	height: 200px;
+	background-color: lightgrey;
+	margin: 10px;
+}
+footer {
+	clear: both;
+	background-color: black;
+	height: 200px;
+}
+
+
+
+
