@@ -13,11 +13,13 @@ body {
 .header img {
 	width: 100%;
 }
+
 nav {
 	color: white;
 	width: 100%;
 	text-align: center;
 }
+
 li {
 	display: inline-block;
 	width: 9%;
@@ -28,7 +30,50 @@ li {
 	margin-left: -3px;
 	padding-top: 12px;
 	padding-bottom: 12px;
+	position: relative;
 }
+
+li:hover {
+	background-color: #5C2E00;
+}
+
+/* For the hidden drop down menus */
+nav ul li ul {
+	visibility: hidden;
+	float: left;
+  min-width: 175px;
+  position: absolute;
+  transition: visibility 0.2s ease-in;
+	left: 0;
+	z-index: 999;
+	margin-top: 12px;
+	margin-left: 2px;
+	opacity: .9;
+	border: 1px white;
+}
+
+nav ul li ul li {
+	clear: both;
+	font-size: .9em;
+	padding: 9px;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	display: block;
+	width: 100%;
+	border: 1px grey solid;
+}
+
+/* Show drop down menus*/
+nav ul li:hover > ul,
+nav ul li ul:hover {
+   visibility: visible;
+    -webkit-transition: width 2s; /* Safari */
+    transition: width 2s;
+		-webkit-transition-timing-function: ease;
+		transition-timing-function: ease;
+
+}
+
 h1 {
 	font-family: 'Passion One', cursive;
 	font-size: 6em;
@@ -42,15 +87,35 @@ h2 {
 	padding: 10px 0 10px 0;
 	font-weight: bold;
 }
+.photo-container {
+	position: relative;
+	height: 154px;
+	overflow: hidden;
+}
+.arrow-left {
+	  width:20px;
+    height:50px;
+    position: absolute;
+    margin-left: 0px;
+    margin-top: 75px;
+    cursor: pointer;
+}
+.arrow-right {
+	  width:20px;
+    height:50px;
+    position: absolute;
+    margin-left: 965px;
+    margin-top: 75px;
+    cursor: pointer;
+}
 .photos img {
 	display: inline-block;
-	overflow: hidden;
 	margin: 5px;
 }
 .photos {
-	overflow: hidden;
 	height: 154px;
 	margin: 10px;
+	position: absolute;
 }
 .main {
 	box-sizing: border-box;
@@ -63,6 +128,7 @@ h2 {
 	width: 650px;
 	line-height: 1.3em;
 	font-size: .9em;
+	margin-bottom: 15px;
 }
 article {
 	padding-top: 25px;
@@ -71,6 +137,8 @@ article {
 	float: left;
 	padding-right: 15px;
 }
+
+/* Side bar */
 .side {
 	position: relative;
 	float: right;
@@ -131,6 +199,8 @@ article {
 	padding: 15px;
 	box-sizing: border-box;
 }
+
+/* Footer section */
 footer {
 	clear: both;
 	background-color: black;
