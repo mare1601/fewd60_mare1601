@@ -87,35 +87,45 @@ h2 {
 	padding: 10px 0 10px 0;
 	font-weight: bold;
 }
-.photo-container {
+.total-container {
 	position: relative;
 	height: 154px;
+	width: 975px;
 	overflow: hidden;
 }
+.photo-container {
+	box-sizing: border-box;
+	position: relative;
+	height: 154px;
+	width: 930px;
+	overflow: hidden;
+	float: left;
+}
 .arrow-left {
-	  width:20px;
-    height:50px;
-    position: absolute;
-    margin-left: 0px;
-    margin-top: 75px;
+	width: 10px;
+    height: 154px;
+    padding-top: 75px;
+    padding-right: 5px;
+	float: left;
     cursor: pointer;
 }
 .arrow-right {
-	  width:20px;
-    height:50px;
-    position: absolute;
-    margin-left: 965px;
-    margin-top: 75px;
+	width: 10px;
+    height: 154px;
+    float: right;
+    padding-top: 75px;
     cursor: pointer;
 }
 .photos img {
-	display: inline-block;
 	margin: 5px;
+	float: left;
+	display: inline-block;
+	position: relative;
 }
 .photos {
 	height: 154px;
-	margin: 10px;
-	position: absolute;
+	width: 6000px;
+	float: left;
 }
 .main {
 	box-sizing: border-box;
@@ -125,7 +135,7 @@ h2 {
 .blog {
 	position: relative;
 	float: left;
-	width: 650px;
+	width: 620px;
 	line-height: 1.3em;
 	font-size: .9em;
 	margin-bottom: 15px;
