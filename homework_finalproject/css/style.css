@@ -11,6 +11,7 @@ body {
   width: 100%;
   margin: 0 auto;
   background-color: #666666;
+  overflow-x: hidden;
 }
 header {
   font-size: 50px;
@@ -105,12 +106,12 @@ header {
 }
 
 /* Animation time - watch the airplane soar... */
+
 .plane img {
   display: none;
 }
 
 .fly img {
-  overflow: hidden;
   display: block;
   position: absolute;
   -ms-transform: rotate(107deg); /* IE 9 */
@@ -127,7 +128,6 @@ header {
   to {
     margin-left: 100%;
     margin-top: 18%;
-    overflow: hidden;
   }
 }
 
