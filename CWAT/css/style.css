@@ -1,0 +1,84 @@
+/* css file for CWAT */
+body {
+  background-color: light grey;
+}
+header {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 30px;
+  padding-bottom: 30px;
+}
+h1 {
+  font-family: 'Arvo', serif;
+  font-size: 1.5em;
+  font-weight: 400;
+}
+.colorful {
+  color: #ff0066;
+}
+h2 {
+  font-family: 'Rock Salt', arial;
+  font-size: 1.1em;
+  font-weight: 400;
+  padding-left: 50px;
+  padding-top: 10px;
+}
+
+/* Top nav styling starting here */
+nav {
+  color: black;
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  border-bottom: 1px solid #9B9296;
+}
+li {
+  display: inline-block;
+  margin: 0 auto;
+  font-family: helvetica;
+  padding: 15px;
+  font-size: .8em;
+}
+li a {
+  text-decoration: none;
+  color: black;
+}
+
+/* Work examples with click through options to portfolio */
+#main {
+  color: black;
+  width: 80%;
+  margin: 0 auto;
+}
+.paintings {
+  display: block;
+  float: left;
+  padding: 30px; 
+  margin-top: 50px;
+  padding-left: 10%;
+}
+.photos {
+  display: block;
+  float: right;
+  padding: 30px;
+  margin-top: 50px;
+  padding-right: 10%;
+}
+
+footer {
+  color: black;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  text-align: center;
+  position: fixed;
+  bottom: 50px;
+  padding-top: 20px;
+  border-top: 1px solid #9B9296;
+}
+.social-media {
+  display: inline-block;
+}
+.social-media img {
+  padding: 5px;
+}
