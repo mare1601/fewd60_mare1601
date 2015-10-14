@@ -45,22 +45,24 @@ li a {
 }
 
 /* Work examples with click through options to portfolio */
-#main {
-  -moz-column-count: 3;
-  -moz-column-gap: 5px;
-  -webkit-column-count: 3;
-  -webkit-column-gap: 5px;
-  column-count: 3;
-  column-gap: 5px;
-  width: 80%; 
+.grid {
+  max-width: 1200px;
 }
 
-.photos {
-  display: inline-block; /* Display inline-block, and absolutely NO FLOATS! */
-  margin-bottom: 200px;
-  width: 100% !important;
-  height: auto !important;
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
 }
+.grid-sizer,
+.grid-item {
+  width: 20%;
+}
+.grid-item {
+  height: 100%;
+  float: left;
+}
+
 
 footer {
   color: black;
