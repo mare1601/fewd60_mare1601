@@ -49,20 +49,27 @@ li a {
   color: black;
   width: 80%;
   margin: 0 auto;
+  font-family: helvetica;
+  font-size: 1em;
+}
+.works {
+  text-align: center;
+  margin-top: 75px;
+  padding-left: 30px;
 }
 .paintings {
-  display: block;
-  float: left;
-  padding: 30px; 
-  margin-top: 50px;
-  padding-left: 10%;
+  display: inline-block;
 }
 .photos {
-  display: block;
-  float: right;
-  padding: 30px;
-  margin-top: 50px;
-  padding-right: 10%;
+  display: inline-block;
+}
+.paintings img {
+  width: 80%;
+  margin-bottom: 10px;
+}
+.photos img {
+  width: 56%;
+  margin-bottom: 10px;
 }
 
 footer {
