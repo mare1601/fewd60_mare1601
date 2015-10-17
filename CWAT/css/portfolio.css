@@ -1,6 +1,7 @@
 /* css file for CWAT */
 body {
   background-color: light grey;
+
 }
 header {
   width: 80%;
@@ -43,33 +44,33 @@ li a {
   text-decoration: none;
   color: black;
 }
-
-/* Work examples with click through options to portfolio */
 #main {
-  -moz-column-count: 3;
-  -moz-column-gap: 5px;
-  -webkit-column-count: 3;
-  -webkit-column-gap: 5px;
-  column-count: 3;
-  column-gap: 5px;
-  width: 80%; 
+  width: 80%;
+  overflow-y: scroll;
+  margin: 0 auto;
+  text-align: center;
 }
-
 .photos {
-  display: inline-block; /* Display inline-block, and absolutely NO FLOATS! */
-  margin-bottom: 200px;
-  width: 100% !important;
-  height: auto !important;
+  width: 75%;
+  margin-top: 50px;
+  padding-top: 0;
+  text-align: center;
+}
+.photos img {
+  margin: 0 auto;
+  max-width: 100%;
 }
 
 footer {
   color: black;
+  background-color: white;
   width: 80%;
   margin-left: 10%;
   margin-right: 10%;
   text-align: center;
-  position: fixed;
-  bottom: 50px;
+  position: static;
+  bottom: 0;
+  height: 50px;
   padding-top: 20px;
   border-top: 1px solid #9B9296;
 }
