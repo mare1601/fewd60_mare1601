@@ -1,6 +1,5 @@
 /* css file for CWAT */
 body {
-  background-color: light grey;
 
 }
 header {
@@ -46,19 +45,17 @@ li a {
 }
 #main {
   width: 80%;
-  overflow-y: scroll;
   margin: 0 auto;
   text-align: center;
+  margin-bottom: 20px;
 }
 .photos {
-  width: 75%;
+  display: block;
   margin-top: 50px;
   padding-top: 0;
-  text-align: center;
 }
 .photos img {
-  margin: 0 auto;
-  max-width: 100%;
+  width: auto;
 }
 
 footer {

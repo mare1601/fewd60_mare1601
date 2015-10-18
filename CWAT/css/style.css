@@ -52,6 +52,7 @@ li a {
   font-family: helvetica;
   font-size: 1em;
 }
+/* For the main page */
 .works {
   text-align: center;
   margin-top: 75px;
@@ -70,6 +71,33 @@ li a {
 .photos img {
   width: 56%;
   margin-bottom: 10px;
+}
+/* For the contact page */
+.main {
+  color: black;
+  width: 80%;
+  margin: 0 auto;
+  font-family: helvetica;
+  font-size: 1em;
+  margin-top: 50px;
+}
+.contact {
+  float: left;
+  padding-left: 15%;
+  line-height: 1.5em;
+  padding-top: 10%;
+}
+.contact span {
+  display: block;
+  text-align: right;
+}
+.contact a {
+  text-decoration: none;
+  color: black;
+}
+.image {
+  float: right;
+  padding-right: 15%;
 }
 
 footer {
