@@ -30,6 +30,7 @@ nav {
   width: 80%;
   margin: 0 auto;
   text-align: center;
+  height: 40px;
   border-bottom: 1px solid #9B9296;
 }
 li {
@@ -37,20 +38,48 @@ li {
   margin: 0 auto;
   font-family: helvetica;
   padding: 15px;
-  font-size: .8em;
+  font-size: .9em;
 }
 li a {
   text-decoration: none;
   color: black;
 }
+li:hover {
+  transition-property: ;
+  transition-duration: 1s;
+  transition-timing-function: ease;
+  vertical-align: sub;
+}
+/* For the hidden drop down menus */
+nav ul li ul {
+  visibility: hidden;
+  position: absolute;
+  min-width: 100px;
+  z-index: 999;
+  margin-top: 12px;
+  opacity: .9;
+}
+nav ul li ul li {
+  clear: both;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  display: block;
+  width: 100%;
+  text-align: left;
+}
 
-/* Work examples with click through options to portfolio */
+/* Show drop down menus */
+nav ul li:hover > ul,
+nav ul li ul:hover {
+   visibility: visible;
+}
 #main {
   color: black;
   width: 80%;
   margin: 0 auto;
   font-family: helvetica;
   font-size: 1em;
+  margin-bottom: 100px;
 }
 /* For the main page */
 .works {
@@ -59,17 +88,23 @@ li a {
   padding-left: 30px;
 }
 .paintings {
+  width: 40%;
+  box-sizing: border-box;
   display: inline-block;
 }
 .photos {
+  width: 40%;
+  box-sizing: border-box;
   display: inline-block;
 }
 .paintings img {
-  width: 80%;
+  box-sizing: border-box;
+  max-width: 70%;
   margin-bottom: 10px;
 }
 .photos img {
-  width: 56%;
+  box-sizing: border-box;
+  max-width: 70%;
   margin-bottom: 10px;
 }
 /* For the contact page */
@@ -79,13 +114,15 @@ li a {
   margin: 0 auto;
   font-family: helvetica;
   font-size: 1em;
-  margin-top: 50px;
+  margin-top: 50px;  
 }
 .contact {
   float: left;
   padding-left: 15%;
   line-height: 1.5em;
   padding-top: 10%;
+  padding-bottom: 10%;
+  vertical-align: center;
 }
 .contact span {
   display: block;
@@ -98,16 +135,20 @@ li a {
 .image {
   float: right;
   padding-right: 15%;
+  margin-bottom: 50px;
 }
 
 footer {
+  clear: both;
   color: black;
+  background-color: white;
   width: 80%;
   margin-left: 10%;
   margin-right: 10%;
   text-align: center;
-  position: fixed;
-  bottom: 50px;
+  position: static;
+  bottom: 0;
+  height: 50px;
   padding-top: 20px;
   border-top: 1px solid #9B9296;
 }
@@ -116,4 +157,38 @@ footer {
 }
 .social-media img {
   padding: 5px;
+}
+
+/* Small screens! Like iphones! */
+@media (max-width: 500px) {
+  li {
+    display: block;
+    padding: 5px;
+    text-align: left;
+    padding-left: 40%;
+  }
+  nav {
+    height: auto;
+    display: block;
+    padding-bottom: 15px;
+  }
+  nav ul li ul {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    text-indent: -25%;
+  }
+  nav ul li ul li {
+    visibility: visible;
+    display: block;
+  }  
+  #main {
+    margin-top: 20px;
+  }
+  .main {
+    margin-top: 0px;
+  }
+  .contact {
+    margin-top: 10px;
+  }
 }

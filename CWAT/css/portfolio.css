@@ -30,6 +30,7 @@ nav {
   width: 80%;
   margin: 0 auto;
   text-align: center;
+  height: 40px;
   border-bottom: 1px solid #9B9296;
 }
 li {
@@ -37,27 +38,64 @@ li {
   margin: 0 auto;
   font-family: helvetica;
   padding: 15px;
-  font-size: .8em;
+  font-size: .9em;
 }
 li a {
   text-decoration: none;
   color: black;
 }
+li:hover {
+  transition-property: ;
+  transition-duration: 1s;
+  transition-timing-function: ease;
+  vertical-align: sub;
+}
+/* For the hidden drop down menus */
+nav ul li ul {
+  visibility: hidden;
+  position: absolute;
+  min-width: 100px;
+  z-index: 999;
+  margin-top: 12px;
+  opacity: .9;
+}
+nav ul li ul li {
+  clear: both;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  display: block;
+  width: 100%;
+  text-align: left;
+}
+
+/* Show drop down menus*/
+nav ul li:hover > ul,
+nav ul li ul:hover {
+   visibility: visible;
+}
 #main {
+  clear: both;
+  color: black;
   width: 80%;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: helvetica;
+  font-size: 1em;
+  margin-bottom: 100px;
+  margin-top: 70px;
   text-align: center;
-  margin-bottom: 20px;
 }
 .photos {
   display: block;
-  margin-top: 50px;
+  margin-top: 10px;
   padding-top: 0;
+  margin-right: auto;
+  margin-left: auto;
+  width: auto;
 }
 .photos img {
   width: auto;
 }
-
 footer {
   color: black;
   background-color: white;
@@ -76,4 +114,39 @@ footer {
 }
 .social-media img {
   padding: 5px;
+}
+
+
+/* Small screens! Like iphones! */
+@media (max-width: 500px) {
+  li {
+    display: block;
+    padding: 5px;
+    text-align: left;
+    padding-left: 40%;
+  }
+  nav {
+    height: auto;
+    display: block;
+    padding-bottom: 15px;
+  }
+  nav ul li ul {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    text-indent: -25%;
+  }
+  nav ul li ul li {
+    visibility: visible;
+    display: block;
+  }  
+  #main {
+    margin-top: 20px;
+  }
+  .main {
+    margin-top: 0px;
+  }
+  .contact {
+    margin-top: 20px;
+  }
 }
