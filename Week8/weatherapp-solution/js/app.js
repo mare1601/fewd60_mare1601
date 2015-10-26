@@ -11,7 +11,7 @@ $(function () {
 
 		console.log("The city is " + city);
 
-		var url = "http://api.openweathermap.org/data/2.5/forecast/daily?q=" + encodeURIComponent(city) + "&cnt=4&mode=json";
+		var url = "http://api.openweathermap.org/data/2.5/weather?q=" + encodeURIComponent(city) + "APPID=db9f972ceedfc04224b19c5c25e50501&cnt=4&mode=json";
 
 		console.log("The url is " + url);
 /*
